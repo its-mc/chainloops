@@ -1,0 +1,9 @@
+{
+    "name": "chainloops_backend",
+    "version": "0.0.0",
+    "private": true,
+    "type": "module",
+    "dependencies": {
+        "azle": "^0.22.0"
+    }
+}

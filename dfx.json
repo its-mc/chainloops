@@ -1,0 +1,39 @@
+{
+  "canisters": {
+    "chainloops_backend": {
+      "build": "npx azle chainloops_backend",
+      "candid": "src/chainloops_backend/chainloops_backend.did",
+      "gzip": true,
+      "main": "src/chainloops_backend/src/index.ts",
+      "tech_stack": {
+        "cdk": {
+          "azle": {}
+        },
+        "language": {
+          "javascript": {},
+          "typescript": {}
+        }
+      },
+      "type": "custom",
+      "wasm": ".azle/chainloops_backend/chainloops_backend.wasm"
+    },
+    "chainloops_frontend": {
+      "dependencies": [
+        "chainloops_backend"
+      ],
+      "source": [
+        "src/chainloops_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "chainloops_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
