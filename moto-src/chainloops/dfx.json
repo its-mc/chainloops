@@ -1,0 +1,26 @@
+{
+  "canisters": {
+    "chainloops_backend": {
+      "main": "src/chainloops_backend/main.mo",
+      "type": "motoko"
+    },
+    "chainloops_frontend": {
+      "dependencies": [
+        "chainloops_backend"
+      ],
+      "source": [
+        "src/chainloops_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "chainloops_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
